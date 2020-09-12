@@ -62,13 +62,19 @@
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{#1 \hfill #2}%
 }
+
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
 }
 
+\newcommand{\experiencesubsection}[4]{%
+  \subsection[#1]{#1 \hfill #2 \\ #3 \hfill #4}%
+}
+
 \newcommand{\name}[1]{
   \centerline{\Huge\scshape{#1}}
-  \vspace{1.25ex}
+  % \vspace{1.25ex}
+  \vspace{2ex}
 }
 
 \newcommand{\contactInfo}[3]{
@@ -80,7 +86,22 @@
   \vspace{1.5ex}
 }
 
-\newcommand{\role}[2]{
+\newcommand{\personalInfo}[4]{
+  \centerline{\sffamily\large{\faBirthdayCake\ {#1} \textperiodcentered\ \faFlag\ {#2} \textperiodcentered\ \faMars\ {#3} \textperiodcentered\ \faVenusMars\ {#4} }}
+  \vspace{1.5ex}
+}
+
+\newcommand{\addressInfo}[1]{
+  \centerline{\sffamily\large{\faHome\ {#1}}}
+  \vspace{1.5ex}
+}
+
+\newcommand{\allInfo}[5]{
+  \centerline{\sffamily\large{\faBirthdayCake\ {#1} \textperiodcentered\ \faFlag\ {#2} \textperiodcentered\ \faMars\ {#3} \textperiodcentered\ \faVenusMars\ {#4} \textperiodcentered\ \faHome\ {#5}}}
+  \vspace{1.5ex}
+}
+
+\newcommand{\role}[2]{ 
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
